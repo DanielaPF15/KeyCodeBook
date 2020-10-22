@@ -11,6 +11,7 @@ app.use(bodyparser.json())
 conectDB()//Ejecutando la conexion a la base de datos
 
 require('./routes/user')(app)
+require('./routes/genre')(app)
 app.listen(3000,() =>{
     console.log('Holaaa a todos')
       
