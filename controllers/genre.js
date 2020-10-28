@@ -57,3 +57,26 @@ exports.update =(req,res)=>{
       }
   )
 }
+exports.getAll = (req,res)=>{
+    GenreModel.find()
+     .then((genre)=>res.send(genre))
+     .catch(
+         (error)=>{
+             return res.status(500).send({
+                 message:error.message
+             })
+         }
+     )
+ }
+ exports.getOne = (req,res)=>{
+     GenreModel.findById(req.params.id)
+     .then((genre)=>res.send(genre))
+     .catch(
+         (error)=>{
+             return res.status(500).send({
+                 message:error.message
+             })
+         }
+     )
+ }
+ 
