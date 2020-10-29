@@ -3,6 +3,7 @@ const cors = require('cors')
 const bodyparser = require('body-parser')
 
 const { conectDB} = require('./db')
+const port=process.env.PORT || 3000
 const app = express()//Se convierte a la cconstante express en un objeto por el cual se va a trabajar
 
 app.use(cors())
