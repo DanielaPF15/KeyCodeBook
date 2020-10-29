@@ -2,7 +2,7 @@ const express = require('express')//Estamos utilizando express en nuestro proyec
 const cors = require('cors')
 const bodyparser = require('body-parser')
 
-const { conectDB} = require('./db')
+const { conectDB} = require('./db')//conexión a la base de datos
 const port=process.env.PORT || 3000//puerto
 const app = express()//Se convierte a la cconstante express en un objeto por el cual se va a trabajar
 
