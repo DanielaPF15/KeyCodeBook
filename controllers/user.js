@@ -81,6 +81,7 @@ exports.update = (req, res) => {
 
 }
 
+
 /**
  * Método para listar todos los usuarios
  */
