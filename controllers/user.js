@@ -26,6 +26,8 @@ exports.create = (req, res) => {
     user.save()
         .then((dataUser) => {
             res.send(dataUser)
+            const contentEmail = '<h1>Hola cómo estás</h1>'
+            sendEmailInfo(dataUser.email, 'Bienvenido', contentEmail, '', res)
         })
         .catch((error) => {
             res.status(500).send({
