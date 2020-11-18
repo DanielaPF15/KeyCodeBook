@@ -4,6 +4,7 @@ const conectDB = ()=>{
     //conect permite conectar a una base de datos tiene opciones:
     // -useNewUrlParser: analizar la informacion que se le quiere enviar a MongoDB.
     //-useUnifiedTopology escucha llamados que hacemos a mongo de BD y monitoréa que es lo que pasa
+    /*'mongodb+srv://userAdminBook:testBITBook@proyectobit.3pvug.mongodb.net/BITBook?retryWrites=true&w=majority'*/
     mongoose.connect(config.mongoDB,{ useNewUrlParser: true, useUnifiedTopology: //esta bien
         true},(error)=>{
             if(error){
