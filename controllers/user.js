@@ -166,7 +166,8 @@ const sendEmailInfo = (receiver, subject, contentEmail, contentTxt = '', res) =>
         }else{
             res.status(200).send({
                 message: 'Correo enviado correctamente'
-            }) 
+            })  
+            
         }
     })
 
